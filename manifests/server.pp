@@ -68,6 +68,7 @@ class ssh_hardening::server (
   $allow_agent_forwarding = false,
   $max_auth_retries       = 2,
   $options                = {},
+  $ssh_server_version_major
 ) {
 
   $ssh65 = versioncmp($ssh_server_version_major, '6.5') >= 0
